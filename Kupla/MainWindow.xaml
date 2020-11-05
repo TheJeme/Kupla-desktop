@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kupla"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Kupla" 
+        Height="370" Width="320">
     <Grid>
-        
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="#699acc" Offset="0"/>
+                    <GradientStop Color="#c69abb" Offset="0.567"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Margin="30">
+                <Label Content="Master Password" FontSize="16" Margin="15,0"/>
+                <PasswordBox x:Name="MasterPasswordBox" Margin="10,0" Height="30" FontSize="16" VerticalContentAlignment="Center"/>
+                <Label Content="Service" FontSize="16" Margin="15,0"/>
+                <TextBox x:Name="ServiceBox" Margin="10,0" Height="30" FontSize="16" VerticalContentAlignment="Center"/>
+                <Button x:Name="SecretPasswordButton" 
+                    Style="{DynamicResource RoundedButtonStyle}" 
+                    Content="✓" 
+                    Margin="30,30,30,10"
+                    Width="75" 
+                    Height="75"
+                    FontSize="28"
+                    Click="SecretPasswordButton_Click"/>
+                <Label x:Name="ClipboardLabel" Content="Password copied to clipboard!" Visibility="Collapsed" FontSize="12" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
