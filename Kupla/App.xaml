@@ -8,7 +8,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="50" Background="White" BorderThickness="1" Padding="2">
+                        <Border CornerRadius="50" Background="Transparent" BorderBrush="White" BorderThickness="3" Padding="2">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                     </ControlTemplate>
