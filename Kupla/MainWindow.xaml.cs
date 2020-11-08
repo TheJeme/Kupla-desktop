@@ -46,7 +46,7 @@ namespace Kupla
                 {
                     builder.Append(bytes[i].ToString("x2"));
                 }
-                for (int i = Convert.ToInt32(bytes.Length / 2); i < bytes.Length - 5; i++)
+                for (int i = Convert.ToInt32(bytes.Length / 2); i < bytes.Length; i++)
                 {
                     builder.Append(bytes[i].ToString("x2").ToUpper());
                 }

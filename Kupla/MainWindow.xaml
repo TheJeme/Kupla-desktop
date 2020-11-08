@@ -31,7 +31,7 @@
                     Height="75"
                     FontSize="28"
                     Click="SecretPasswordButton_Click"/>
-                <Label x:Name="ClipboardLabel" Content="Password copied to clipboard!" Visibility="Collapsed" FontSize="12" HorizontalContentAlignment="Center"/>
+                <Label x:Name="ClipboardLabel" Foreground="White" Content="Password copied to clipboard!" Visibility="Collapsed" FontSize="12" HorizontalContentAlignment="Center"/>
             </StackPanel>
         </Border>
     </Grid>
