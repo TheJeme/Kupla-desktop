@@ -12,9 +12,9 @@
     <Grid>
         <Border>
             <Border.Background>
-                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                <LinearGradientBrush EndPoint="1.0, 1.0" StartPoint="0, 0">
                     <GradientStop Color="#699acc" Offset="0"/>
-                    <GradientStop Color="#c69abb" Offset="0.567"/>
+                    <GradientStop Color="#c69abb" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel Margin="30">
@@ -27,8 +27,8 @@
                     Content="✓" 
                     Foreground="White"
                     Margin="30,30,30,10"
-                    Width="75" 
-                    Height="75"
+                    Width="80" 
+                    Height="80"
                     FontSize="28"
                     Click="SecretPasswordButton_Click"/>
                 <Label x:Name="ClipboardLabel" Foreground="White" Content="Password copied to clipboard!" Visibility="Collapsed" FontSize="12" HorizontalContentAlignment="Center"/>
